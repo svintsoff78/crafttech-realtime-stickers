@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:17
+    container_name: crafttech_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: gen_user
+      POSTGRES_PASSWORD: crafttech
+      POSTGRES_DB: default_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+volumes:
+  pg_data:
