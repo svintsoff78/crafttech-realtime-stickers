@@ -55,6 +55,8 @@ export class WsValidationPipe implements PipeTransform {
   }
 
   transform(value: any, metadata: ArgumentMetadata) {
+    if (typeof value === 'string') value = JSON.parse(value)
+
     const metatype = metadata.metatype as any;
 
     if (!metatype || typeof metatype !== 'function' || !metatype.schema) {
