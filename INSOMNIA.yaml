@@ -1,0 +1,142 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: CRAFTTECH
+meta:
+  id: wrk_518ac936070f40c297306ce0a559c7b1
+  created: 1764597307401
+  modified: 1764597307401
+  description: ""
+collection:
+  - url: ws://127.0.0.1:3000/board
+    name: Join Board
+    meta:
+      id: socketio-req_31a51d009d334837aad5dbc5e081dca2
+      created: 1764597469387
+      modified: 1764597827666
+      description: ""
+      sortKey: -1764597469387
+    settings:
+      encodeUrl: true
+      cookies:
+        store: true
+        send: true
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    eventListeners:
+      - id: socketIO-event_b9264357730045ceb5fea656a3ecc6b2
+        eventName: board_state
+        desc: ""
+        isOpen: true
+      - id: socketIO-event_b0494f36c49e44b096b99eee7756251f
+        eventName: exception
+        desc: ""
+        isOpen: true
+  - url: ws://127.0.0.1:3000/board
+    name: Create Sticker
+    meta:
+      id: socketio-req_6f2e5ac1c39b45a19fd2ae5a744cee28
+      created: 1764598538834
+      modified: 1764599415832
+      description: ""
+      sortKey: -1764598538834
+    settings:
+      encodeUrl: true
+      cookies:
+        store: true
+        send: true
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    eventListeners:
+      - id: socketIO-event_fe965f638d794331aecdf23bde03a7af
+        eventName: sticker_created
+        desc: ""
+        isOpen: true
+      - id: socketIO-event_9c1c706648b1473eb73fd0fe6871f6f0
+        eventName: exception
+        desc: ""
+        isOpen: true
+      - id: socketIO-event_d47f4e9de8a54bcdbcb9529bb6c2992a
+        eventName: board_state
+        desc: ""
+        isOpen: false
+  - url: ws://127.0.0.1:3000/board
+    name: Update Sticker
+    meta:
+      id: socketio-req_f73079639f0d41f28b62c477cdb0112c
+      created: 1764599336440
+      modified: 1764599419264
+      description: ""
+      sortKey: -1764599336440
+    settings:
+      encodeUrl: true
+      cookies:
+        store: true
+        send: true
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    eventListeners:
+      - id: socketIO-event_b2db7095c29d48dcb57955ff35e1fc4f
+        eventName: board_state
+        desc: ""
+        isOpen: false
+      - id: socketIO-event_5e9c31b7ee86474580030041158481ea
+        eventName: sticker_updated
+        desc: ""
+        isOpen: true
+      - id: socketIO-event_d5183c33cbf94cc8b58f254bef4c6ef4
+        eventName: exception
+        desc: ""
+        isOpen: true
+  - url: ws://127.0.0.1:3000/board
+    name: Delete Sticker
+    meta:
+      id: socketio-req_70f96a73320a4f928d4788c562859f56
+      created: 1764599441631
+      modified: 1764599565479
+      description: ""
+      sortKey: -1764599441631
+    settings:
+      encodeUrl: true
+      cookies:
+        store: true
+        send: true
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    eventListeners:
+      - id: socketIO-event_c3e41a84d1974c909204e8be42f9c3f5
+        eventName: ""
+        desc: ""
+        isOpen: false
+      - id: socketIO-event_28cb95312cbc4a90991698d8600785fc
+        eventName: exception
+        desc: ""
+        isOpen: true
+      - id: socketIO-event_5f5ac1a8675246efb57ceb5b4174641b
+        eventName: sticker_deleted
+        desc: ""
+        isOpen: false
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_f5d11d680389705b9dafcd399370e1d55fd96d3a
+    created: 1764597307407
+    modified: 1764597307407
+environments:
+  name: Base Environment
+  meta:
+    id: env_f5d11d680389705b9dafcd399370e1d55fd96d3a
+    created: 1764597307406
+    modified: 1764597307406
+    isPrivate: false
